@@ -22,4 +22,9 @@ based on user behavior and social network for the IBM Watson Studio's data platf
 
 ### user_item_matrix.p
 a pickle file with a matrix of the user_ids and articles that have interacted with
-<img src="https://user-images.githubusercontent.com/39535338/150944797-8a18c5ce-7f31-4c28-8632-cc3b8365b97a.PNG" alt="drawing" width="800"/>
+<img src="https://user-images.githubusercontent.com/39535338/150944797-8a18c5ce-7f31-4c28-8632-cc3b8365b97a.PNG" alt="drawing" width="600"/>
+
+## Model Results
+<img src="https://user-images.githubusercontent.com/39535338/151089046-cb508af3-f503-4591-a083-f329ca588f7a.PNG" alt="drawing" width="600"/>
+
+As the number of latent features increases, we obtain a higher error rate on the test set predictions. This is beacause of the small test test (There were only 20 individuals who co-existed between the training and testing data-sets), not even enough data to get an idea about the optimal number of latent features. This a common situation during initial prototype of recommendation engines, since there is the cold start problem with a lot of users. Because of these reasons this model is not suitable for use in production yet.
